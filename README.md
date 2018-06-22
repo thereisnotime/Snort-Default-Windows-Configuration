@@ -5,21 +5,31 @@ By default Snort on Windows comes with Linux paths, different library names and 
 
 ### Instructions ###
 1. Install Snort 2:
-[https://snort.org/downloads](https://snort.org/downloads "Snort")
+
+https://snort.org/downloads
+
 2. Install WinPCap:
-[https://www.winpcap.org/install/default.htm](https://www.winpcap.org/install/default.htm "WinPcap")
+
+https://www.winpcap.org/install/default.htm
+
 3. Download and replace config file located in C:\Snore\etc\ path:
-[https://raw.githubusercontent.com/thereisnotime/Snort-Default-Windows-Configuration/master/snort.conf](https://raw.githubusercontent.com/thereisnotime/Snort-Default-Windows-Configuration/master/snort.conf "Configuration File")
+
+https://raw.githubusercontent.com/thereisnotime/Snort-Default-Windows-Configuration/master/snort.conf
+
 4. You can get some nice community rules from here:
-[https://github.com/thereisnotime/Snort-2-Rules](https://github.com/thereisnotime/Snort-2-Rules "Snort Rules")
+
+https://github.com/thereisnotime/Snort-2-Rules
+
 5. Start your terminal as administrator and type:
 ```batch
 cd C:\Snort\bin
 ```
+
 6. Determine your interface with:
 ```batch
 snort -W
 ```
+
 7. Start Snort on 5th (or whatever number yours is) interface:
 ```batch
 snort -i 5 -c C:\Snort\etc\snort.conf
